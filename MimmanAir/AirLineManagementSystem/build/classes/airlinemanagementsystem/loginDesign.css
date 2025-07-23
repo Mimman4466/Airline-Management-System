@@ -1,0 +1,52 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 19, 2025, 9:48:00 PM
+    Author     : Mimman
+*/
+
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right, #6b0f20, #1d4e26);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+.right-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .4px 0px;
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:#b31d25;
+}
+
+.textfield{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-border-width:0px 0px .8px 0px;
+    -fx-font-size:13px;
+    -fx-font-family:"Tahoma";
+}
+.textfield:focused{
+    -fx-border-color:linear-gradient(to bottom right, #6b0f20, #1d4e26);
+    -fx-border-width:0px 0px 1.8px 0px;
+}
+
+.login-btn{
+    -fx-background-color:linear-gradient(to bottom , #39948b, #1f9868);
+    -fx-background-radius:8px;
+    -fx-font-size:14px;
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+}
+
+.login-btn:hover{
+    -fx-background-color:linear-gradient(to bottom , #83d7b5, #266249);
+}
