@@ -1,0 +1,44 @@
+CREATE DATABASE airdata;
+USE airdata;
+
+
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE plane (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    plane_id VARCHAR(100) NOT NULL UNIQUE,
+    location VARCHAR(100),
+    status VARCHAR(50),
+    price DECIMAL(10,2),
+    date DATE
+);
+
+
+
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id VARCHAR(50) NOT NULL UNIQUE,
+    firstName VARCHAR(100),
+    lastName VARCHAR(100),
+    gender VARCHAR(10),
+    phoneNumber VARCHAR(20),
+    plane_id VARCHAR(100),
+    location VARCHAR(100),
+    type VARCHAR(50),
+    seatNum VARCHAR(10),
+    total DECIMAL(10,2),
+    date DATE
+);
+
+
+CREATE TABLE customer_receipt (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id VARCHAR(50),
+    total DECIMAL(10,2),
+    date DATE
+);
